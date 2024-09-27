@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    
+<style>
+
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+body{
+
+        background-color: ghostwhite;
+    }
+
+#faixa-de-abertura{
+
+            background: linear-gradient(to right, lightgreen, lightblue, cyan);
+
+            height: 300px;
+
+            margin-top: 2%;
+
+            font-family: "Roboto", sans-serif;
+
+            font-weight: 1000;
+
+            font-style: normal;
+
+            font-size: xx-large;
+
+            border-radius: 10px;
+
+            padding: 1%;
+                        
+        }
+
+#faixa-de-links{
+
+    display: flex;
+
+    flex-direction: row;
+
+    font-family: "Roboto", sans-serif;
+
+    font-weight: 700;
+
+    font-style: normal;
+
+    gap: 5%;
+
+   
+    
+}
+
+
+#faixa-de-secoes{
+
+
+display: flex;
+
+flex-direction: row;
+
+gap: 2%;
+
+text-align: center;
+
+align-items: center;
+
+
+font-family: "Roboto", sans-serif;
+
+font-weight: 700;
+
+font-style: normal;
+
+
+}
+
+
+.item-faixa-sessao{
+
+  color: white;
+
+  margin-top: 2%;
+
+  border-left: 1%;
+
+  border-right: 2%;
+
+  border-radius: 10px;
+
+  border-style: solid;
+
+  background-color: black;
+
+  width: 600px;
+
+  border-top: linear-gradient(to right, orange, lightblue, purple);;
+
+  border-bottom: linear-gradient(to right, orange, lightblue, purple);
+
+}
+
+
+#faixa-central{
+
+  margin-top: 3%;
+
+  background: linear-gradient(to right, lightgreen, lightblue, cyan);
+
+  border-radius: 10px;
+
+  height: 10px;
+
+  align-self: center;
+
+  position: relative;
+
+  justify-content: center;
+
+}
+
+#text-faixa-de-abertura{
+
+  margin-left: 3%;
+
+  display: flex;
+
+  height: 600px;
+
+  width: 600px;
+
+  flex-wrap: wrap;
+}
+
+#caixa-central{
+
+margin-left: 5%;  
+
+display: flex;
+
+flex-direction: row;
+
+font-family: "Roboto", sans-serif;
+
+font-weight: 800;
+
+font-style: normal;
+
+gap: 50%;
+
+margin-top: 5%;
+
+width: 400px;
+
+height: 1000px;
+
+background:linear-gradient(to right, lightgreen, lightblue, cyan);
+
+padding: 2%;
+
+border-radius: 20px;
+
+}
+
+.titulo-perfil{
+
+  font-size: xx-large;
+
+}
+
+
+.texto-perfil{
+
+  width: 400px;
+
+  height: 200px;
+}
+
+#foto-perfil{
+
+  border-radius: 160px;
+
+}
+
+#lista-01{
+
+  animation-duration: 2s;
+
+  visibility: hidden;
+
+}
+
+#lista-02{
+
+  animation-duration: 2s;
+
+  visibility: hidden;
+
+}
+
+#lista-03{
+
+  animation-duration: 2s;
+
+  visibility: hidden;
+
+}
+
+
+.caixa-central-child{
+
+  width: 300px;
+
+  height: 800px;
+}
+
+.conteiner{
+
+ display: flex;
+
+ flex-direction: column;
+
+ width: 400px;
+
+ height: 1000px;
+
+ gap: 20%;
+
+ text-align: center;
+
+ align-items: center;
+
+}
+
+#imagem-de-fundo{
+
+  border-radius: 20px;
+}
+
+
+@media (max-width: 480px) {
+            #faixa-de-abertura {
+                font-size: 1.5rem;
+            }
+
+            .item-faixa-sessao {
+                max-width: 200px;
+            }
+
+            #caixa-central {
+                padding: 0;
+            }
+
+            .container {
+                padding: 0;
+            }
+
+            .caixa-central-child {
+                max-width: 90%;
+                padding: 10px;
+            }
+
+            .titulo-perfil {
+                font-size: 1.4rem;
+            }
+
+            .texto-perfil {
+                font-size: 0.9rem;
+          }
+  }
+
+</style>
+
+
+
+
+<section id="faixa-de-links">
+
+<div>
+
+<img src="./imagens/instagram.png" title="gmail ícones"  width="15px" height="15px" id="instagram">
+  
+<a id="instagram-texto">instagram</a>
+      
+</div>
+
+<div>
+  
+<img src="./imagens/linkedin.png" title="gmail ícones"  width="15px" height="15px" id="linkedin">
+
+<a id="linkedin-texto">linkedin</a>
+
+</div>
+
+<div>
+
+<img src="./imagens/gmail.png" title="gmail ícones"  width="15px" height="15px">
+
+<a>rangelmonteiro.dev@gmail.com</a>
+      
+</div>
+  
+</section>
+
+<div id="faixa-de-abertura"> 
+
+  <h1 id="text-faixa-de-abertura">Espere...</h1>
+
+</div>
+ 
+
+
+
+<section id="faixa-de-secoes">
+
+<div id = "opcao-01" class="item-faixa-sessao">
+
+  <p>Sobre mim</p>
+
+</div>
+
+<div id = "opcao-02" class="item-faixa-sessao">
+
+  <p>Habilidades</p>
+
+</div>
+
+<div id = "opcao-03" class="item-faixa-sessao">
+
+  <p>Cursos</p>
+
+</div>
+
+</section>
+
+
+<div id="faixa-central"></div>
+
+
+<main id="caixa-central">
+
+  <div class="container">
+
+<section id="sobre-mim" class="caixa-central-child">
+
+  <img src="/imagens/foto-toon-001.jpg" id="foto-perfil" width="300px" height="300px">
+
+  <h1 class="titulo-perfil">Sobre Mim</h1>
+
+  <p class="texto-perfil">
+    Sou um estudante de Tecnologia da Informação apaixonado por desenvolvimento de software, com uma forte base em JavaScript e Node.js. 
+    Ao longo da minha jornada acadêmica e projetos pessoais, adquiri habilidades sólidas em programação backend, desenvolvendo APIs e aplicações web escaláveis. Estou sempre em busca de 
+    novos desafios e oportunidades para aplicar meu conhecimento e aprender tecnologias emergentes.
+  </p>
+
+  <h1 class="titulo-perfil">Objetivo</h1>
+
+  <p class="texto-perfil">
+    Busco uma oportunidade para desenvolver minhas habilidades em um ambiente desafiador e inovador. 
+    Estou pronto para contribuir com soluções criativas, crescer como desenvolvedor e aprender com profissionais experientes. Meu objetivo é evoluir tanto 
+    tecnicamente quanto pessoalmente, trazendo resultados para a empresa e me destacando na área de TI.
+  </p>
+
+</section>
+
+<section id="habilidades" class="caixa-central-child">
+
+  <div id="item-01" class="mini-box">
+
+    <h1 class="titulo-perfil" id="titulo-01">Linguagens</h1>
+
+    <img src="/imagens/sinal-de-seta-para-baixo-para-navegar.png" width="15px" height="15px" id="seta-01">
+
+    <ul id="lista-01">
+      <li>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" width="25px" height="25px"/>
+          HTML5
+      </li>
+      <li>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" width="25px" height="25px"/>
+          CSS3
+      </li>
+      <li>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" width="25px" height="25px"/>
+          JavaScript
+      </li>
+
+      <li>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" width="25px" height="25px"/>
+        Node.JS (Principal Stack)
+      </li>
+
+      <li>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" width="25px" height="25px" />
+          Express.Js
+      </li>
+
+      <li>
+          
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original-wordmark.svg" width="25px" height="25px"/>
+         Golang (Estudando) 
+      </li>
+    </ul>
+
+  </div>
+
+  <div id="item-02" class="mini-box">
+
+    <h1 class="titulo-perfil" id="titulo-02">Bancos de Dados</h1>
+
+    <img src="/imagens/sinal-de-seta-para-baixo-para-navegar.png" width="15px" height="15px" id="seta-02">
+
+    <ul id="lista-02">
+      <li>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original.svg" width="25px" height="25px"/>
+            MSSQL(SQLSERVER)
+      </li>
+      <li>
+
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" width="25px" height="25px"/>
+          MYSQL
+      </li>
+
+      <li>
+
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" width="25px" height="25px"/>
+          POSTGRESQL
+      </li>
+
+      <li>
+
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.svg" width="25px" height="25px"/>
+          ORACLE
+      </li>
+    </ul>
+
+  </div>
+
+  <div id="item-03">
+
+    <h1 class="titulo-perfil" id="titulo-03">Ferramentas De Trabalho</h1>
+
+    <img src="/imagens/sinal-de-seta-para-baixo-para-navegar.png" width="15px" height="15px" id="seta-03">
+
+    <ul id="lista-03">
+      <li>
+
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original-wordmark.svg" width="25px" height="25px"/>
+          Docker
+      </li>
+
+      <li>
+
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" width="25px" height="25px"/>
+          Linux
+      </li>
+
+      <li>
+
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dbeaver/dbeaver-original.svg" width="25px" height="25px" />
+          Dbeaver
+      </li>
+
+      <li>
+
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" width="25px" height="25px"/>
+          VsCode
+      </li>
+
+      <li>
+
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" width="25px" height="25px"/>
+          Git
+      </li>
+
+      <li>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" width="25px" height="25px"/>
+        GitHub
+      </li>
+    </ul>
+
+  </div>
+
+</section>
+
+<section id="Cursos" class="caixa-central-child">
+
+  <h1 class="titulo-perfil" id="titulo-04">Cursos</h1>
+
+  <ul id="lista-04">
+    <li>
+      Análise e Desenvolvimento de Sistemas
+      (2º Semestre) Unifametro
+    </li>
+
+    <li>
+      Desenvolvimento FullStack - DigitalCollege 
+    </li>
+  </ul>
+
+
+</section>
+
+  </div>
+
+  <div>
+
+    <img src="./imagens/Black And White Globe Y2k Streetwear Logo.png" width="600px" height="600px" id="imagem-de-fundo">
+
+    <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+      Molestiae pariatur cupiditate voluptas sunt consequuntur facere rerum, consectetur animi obcaecati eius praesentium? 
+      Et doloremque porro aspernatur praesentium, quisquam culpa inventore laboriosam?</h2>
+  </div>
+
+</main>
+
+
+<script>
+
+const instagram = document.querySelector("#instagram");
+
+const linkedin = document.querySelector("#linkedin");
+
+const linkedinTexto = document.querySelector("#linkedin-texto")
+
+linkedin.addEventListener('click', ()=>{
+
+
+  window.location.href = "https://www.linkedin.com/in/rangel-monteiro-6b0511225/"
+
+
+})
+
+linkedinTexto.addEventListener('click', ()=>{
+
+
+window.location.href = "https://www.linkedin.com/in/rangel-monteiro-6b0511225/"
+
+
+})
+
+
+
+const tagHtmlTexto = document.querySelector("#text-faixa-de-abertura");
+
+const sequenciaDeTextos = ()=>{
+  
+tagHtmlTexto.innerHTML = "Olá, eu me chamo Rangel Monteiro."
+
+
+setTimeout(()=>{
+
+tagHtmlTexto.innerHTML = "Sou um estudante de TI e busco oportunidades."
+
+}, 3000)
+
+setTimeout(()=>{
+
+tagHtmlTexto.innerHTML = "Obrigado por ter acessado esse link.";
+
+}, 6000)
+}
+
+setInterval(sequenciaDeTextos, 9000);
+
+
+const lista01 = document.querySelector("#lista-01");
+
+const lista02 = document.querySelector("#lista-02");
+
+const lista03 = document.querySelector("#lista-03");
+
+const arrayListas = [lista01, lista02, lista03];
+
+
+
+const titulo01 = document.querySelector("#seta-01");
+
+const titulo02 = document.querySelector("#seta-02");
+
+const titulo03 = document.querySelector("#seta-03");
+
+
+const arrayTitulos = [titulo01, titulo02, titulo03];
+
+
+
+
+
+titulo01.addEventListener('click', ()=>{
+
+if (lista01.style.visibility === "hidden") {
+
+   titulo01.style.transform = "rotate(180deg)"
+
+   lista01.style.visibility = "visible"
+  
+} else {
+
+  titulo01.style.transform = "rotate(0deg)"
+
+
+  lista01.style.visibility = "hidden"
+  
+}
+
+
+});
+
+
+
+
+titulo02.addEventListener('click', ()=>{
+
+
+if (lista02.style.visibility === "hidden") {
+
+   lista02.style.visibility = "visible"
+
+   titulo02.style.transform = "rotate(180deg)"
+  
+} else {
+  
+  
+  titulo02.style.transform = "rotate(0deg)"
+
+  lista02.style.visibility = "hidden"
+  
+}
+
+
+});
+
+
+
+titulo03.addEventListener('click', ()=>{
+
+
+if (lista03.style.visibility === "hidden") {
+
+   lista03.style.visibility = "visible"
+
+   titulo03.style.transform = "rotate(180deg)"
+  
+} else {
+
+  titulo03.style.transform = "rotate(0deg)"
+
+  lista03.style.visibility = "hidden"
+  
+}
+
+
+});
+
+
+
+
+
+
+
+
+
+const botao01 = document.querySelector("#opcao-01");
+
+const botao02 = document.querySelector("#opcao-02");
+
+const botao03 = document.querySelector("#opcao-03");
+
+
+const caixa01 = document.querySelector("#sobre-mim");
+
+const caixa02 = document.querySelector("#habilidades");
+
+const caixa03 = document.querySelector("#Cursos");
+
+const arrayCaixas = [caixa01,caixa02,caixa03];
+
+
+const caixaCentral = document.querySelector("#caixa-central");
+
+
+arrayCaixas.forEach(element => {
+     element.style.display = "none"
+});
+
+
+caixa01.style.display = "block";
+
+
+botao01.addEventListener('click', ()=>{
+
+  caixa01.style.display = "block";
+
+ const myArray = [arrayCaixas[1], arrayCaixas[2]];
+ 
+ myArray.forEach(element => {
+
+  element.style.display = "none";
+
+  
+ });
+
+});
+
+
+botao02.addEventListener('click', ()=>{
+
+caixa02.style.display = "block";
+
+const myArray = [arrayCaixas[0], arrayCaixas[2]];
+
+myArray.forEach(element => {
+
+  element.style.display = "none";
+
+ 
+});
+
+});
+
+
+botao03.addEventListener('click', ()=>{
+
+caixa03.style.display = "block";
+
+
+const myArray = [arrayCaixas[0], arrayCaixas[1]];
+
+myArray.forEach(element => {
+
+  element.style.display = "none";
+ 
+});
+
+});
+
+const arrayButonHTML = [botao01, botao02, botao03]
+
+
+arrayButonHTML.forEach(element => {
+
+  element.addEventListener('click', ()=>{
+
+    if (element.style.padding === '0%') {
+
+      element.style.padding = "1%"
+      
+    } else {
+
+      element.style.padding = "0%"
+      
+    }
+
+  });
+
+});
+
+
+botao01.addEventListener('click', ()=>{
+
+
+const myArray = [arrayButonHTML[1], arrayButonHTML[2]]
+
+myArray.forEach(element => {
+
+  if (element.style.padding === "1%") {
+
+    element.style.padding = "0%"
+    
+  }
+  
+});
+
+});
+
+
+botao02.addEventListener('click', ()=>{
+
+const myArray = [arrayButonHTML[0], arrayButonHTML[2]]
+
+
+myArray.forEach(element => {
+
+  if (element.style.padding === "1%") {
+
+    element.style.padding = "0%"
+    
+  }
+  
+});
+
+});
+
+
+botao03.addEventListener('click', ()=>{
+
+const myArray = [arrayButonHTML[0], arrayButonHTML[1]]
+
+myArray.forEach(element => {
+
+  if (element.style.padding === "1%") {
+
+    element.style.padding = "0%"
+    
+  }
+
+})})
+
+</script>
+
+
+</body>
+</html>
